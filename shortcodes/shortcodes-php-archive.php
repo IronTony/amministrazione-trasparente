@@ -8,7 +8,7 @@ $get_at_option_showarchivedesc = get_option('at_option_showarchivedesc'); ?>
 .showArchive {display:none;} /* Fixed Bootstrap conflict CSS */
 .hideArchive:target + .showArchive {display:inline;} /* Fixed Bootstrap conflict CSS */
 .hideArchive:target {display:none;} /* Fixed Bootstrap conflict CSS */
-.hideArchive:target ~ .list {display:inline;} /* Fixed Bootstrap conflict CSS */
+.hideArchive:target ~ .list {display:inline-block;} /* Fixed Bootstrap conflict CSS + maintain the size of the container */
 @media print {.hideArchive, .showArchive {display:none;}} /* Fixed Bootstrap conflict CSS */
 </style>
 <?php } ?>
